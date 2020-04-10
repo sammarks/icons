@@ -52,7 +52,7 @@ jobs:
           at: ~/repo
       - run:
           name: Semantic Release
-          command: yarn semantic-release
+          command: NPM_TOKEN=$GITHUB_PUBLISH_TOKEN yarn semantic-release
       - run:
           name: Deploy Storybook
           command: yarn deploy-storybook --ci --host-token-env-variable=GITHUB_TOKEN
