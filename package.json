@@ -1,7 +1,7 @@
 {
   "name": "@sammarks/icons",
   "version": "0.0.0-development",
-  "description": "Componetized SVG Icons for React",
+  "description": "My personal componetized SVG Icons for React",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/icons.esm.js",
