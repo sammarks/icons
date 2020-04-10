@@ -31,6 +31,9 @@
     "test": "yarn jest --maxWorkers=2",
     "test:ci": "yarn test --ci=true --coverage=true"
   },
+  "storybook-deployer": {
+    "commitMessage": "chore: deploy storybook [ci skip]"
+  },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
