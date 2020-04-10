@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sammarks/pluginplay-shared.git"
+    "url": "git://github.com/sammarks/icons.git"
   },
   "files": [
     "dist"
