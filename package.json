@@ -6,6 +6,10 @@
   "main": "dist/index.js",
   "module": "dist/icons.esm.js",
   "types": "dist/index.d.ts",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/sammarks/icons.git"
