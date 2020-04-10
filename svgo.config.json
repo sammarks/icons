@@ -2,7 +2,7 @@
   "plugins": [
     {
       "addAttributesToSVGElement": {
-        "attributes": [{ "fill": "currentColor" }, { "aria-hidden": "true" }]
+        "attributes": [{ "fill": "currentColor" }, { "aria-hidden": "true" }, { "height": "1em" }, { "width": "1em" }]
       }
     },
     {
