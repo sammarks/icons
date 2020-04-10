@@ -5,8 +5,14 @@
         "attributes": [{ "fill": "currentColor" }, { "aria-hidden": "true" }]
       }
     },
+    {
+      "removeAttrs": {
+        "attrs": ["fill", "stroke", "fill-rule"]
+      }
+    },
     { "cleanupIDs": true, "params": { "minify": true } },
     { "cleanupListOfValues": true },
+    { "collapseGroups": true },
     { "convertColors": true },
     { "convertStyleToAttrs": true },
     { "convertTransform": true },

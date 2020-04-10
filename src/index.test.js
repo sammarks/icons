@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
  * Additionally, this will more closely emulate the manner with which our consumers will use our
  * components.
  */
-import * as ProductionBundleIconsMap from '../dist/react-svg-icons.esm';
+import * as ProductionBundleIconsMap from '../dist/icons.esm';
 
 const createSnapshotTest = (Component) => {
   const tree = renderer.create(Component).toJSON();

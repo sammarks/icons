@@ -1,5 +1,4 @@
 {
-  "*": [
-    "yarn format:all"
-  ]
+  "*.svg": ["yarn svgo --pretty --config=svgo.config.json"],
+  "*.ts*": ["prettier --write"]
 }

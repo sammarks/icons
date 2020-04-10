@@ -7,7 +7,7 @@ import { withKnobs, object } from '@storybook/addon-knobs';
  * custom webpack configuration for Storybook. Additionally, this will more closely emulate the
  * manner with which our consumers will use our components.
  */
-import * as ProductionBundleIconsMap from '../dist/react-svg-icons.esm';
+import * as ProductionBundleIconsMap from '../dist/icons.esm';
 
 const iconNames = Object.keys(ProductionBundleIconsMap);
 const icons = Object.values(ProductionBundleIconsMap);
