@@ -48,7 +48,7 @@ jobs:
           command: yarn semantic-release
       - run:
           name: Deploy Storybook
-          command: yarn deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
+          command: yarn deploy-storybook --ci --host-token-env-variable=GITHUB_TOKEN
 workflows:
   version: 2
   build-and-deploy:
