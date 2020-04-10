@@ -13,6 +13,7 @@ jobs:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/repo/.npmrc
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
