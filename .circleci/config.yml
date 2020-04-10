@@ -49,20 +49,6 @@ jobs:
       - run:
           name: Deploy Storybook
           command: yarn deploy-storybook --ci --host-token-env-variable=GITHUB_TOKEN
-  release-github:
-    <<: *defaults
-    environment:
-      NODE_ENV: production
-    steps:
-      - attach_workspace:
-          at: ~/repo
-      - run:
-          name: Use Github registry
-          command: |
-            echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/.npmrc
-      - run:
-          name: Publish to Github
-          command: yarn publish
 workflows:
   version: 2
   build-and-deploy:
@@ -81,12 +67,3 @@ workflows:
               only: /(master)/
             tags:
               ignore: /.*/
-      - release-github:
-          context: open-source
-          requires:
-            - build
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /.*/
