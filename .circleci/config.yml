@@ -12,8 +12,8 @@ jobs:
           name: Authenticate with registry
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
-            echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
-            echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > ~/repo/.npmrc
+            echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/repo/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" >> ~/repo/.npmrc
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -42,11 +42,17 @@ jobs:
     environment:
       NODE_ENV: production
     steps:
+      - run:
+          name: Authenticate with registry
+          command: |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+            echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/repo/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=$GITHUB_PUBLISH_TOKEN" >> ~/repo/.npmrc
       - attach_workspace:
           at: ~/repo
       - run:
           name: Semantic Release
-          command: NPM_TOKEN=$GITHUB_PUBLISH_TOKEN yarn semantic-release
+          command: yarn semantic-release
       - run:
           name: Deploy Storybook
           command: yarn deploy-storybook --ci --host-token-env-variable=GITHUB_TOKEN
