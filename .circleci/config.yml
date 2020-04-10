@@ -54,6 +54,8 @@ jobs:
     environment:
       NODE_ENV: production
     steps:
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Use Github registry
           command: |
