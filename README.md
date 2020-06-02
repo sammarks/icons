@@ -16,6 +16,7 @@ If you use this template repository, please ensure that the `.browserslistrc` an
 - Ensure that the `svg` includes a `title` element as the first child of the `svg` element.
   - Its content should be a human-readible description of the SVG (this is for accessibility)
 - Add the correct type-safe mapping in `src/index.ts` (follow the pattern)
+- `yarn format:all` to format the SVGs.
 - `yarn build && yarn test -u` to updates snapshots
 - `yarn storybook` to go and see the result of your work in Storybook.
 

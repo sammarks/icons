@@ -28,7 +28,7 @@ icons.forEach((Icon, index) => {
         }}
       >
         {/* TODO: We could eventually use knobs in a more friendly manner to non-devs, but keep in mind you should map all possible props! */}
-        <Icon {...object('props', { width: '200' })} />
+        <Icon {...object('props', { width: '200', height: '200' })} />
       </div>
     ));
 });
