@@ -8,6 +8,12 @@ This repository isn't published. It exists as a template repository for you to u
 
 If you use this template repository, please ensure that the `.browserslistrc` and `svgo.config.js` match defaults that make you and/or your company happy. Additionally, you'll want to change the import path defining `ProductionBundleIconsMap` in both `src/index.test.js` and `src/index.stories.tsx` to match the `name` field of your `package.json`.
 
+## Native
+
+This library supports React Native. Just import icons using `@sammarks/icons/native` instead of `@sammarks/icons`.
+
+Internally, it uses `react-native-svg`, so make sure that's installed and configured as well.
+
 ## Contributing new icons to the library
 
 ### Process
@@ -16,6 +22,7 @@ If you use this template repository, please ensure that the `.browserslistrc` an
 - Ensure that the `svg` includes a `title` element as the first child of the `svg` element.
   - Its content should be a human-readible description of the SVG (this is for accessibility)
 - Add the correct type-safe mapping in `src/index.ts` (follow the pattern)
+- Add the correct type-safe mapping in `src/native.tsx` (follow the pattern)
 - `yarn format:all` to format the SVGs.
 - `yarn build && yarn test -u` to updates snapshots
 - `yarn storybook` to go and see the result of your work in Storybook.

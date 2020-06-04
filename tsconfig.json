@@ -1,5 +1,5 @@
 {
-  "include": ["src/index.ts", "@types"],
+  "include": ["src/index.ts", "src/native.tsx", "@types"],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,

@@ -16,10 +16,11 @@
     "url": "git://github.com/sammarks/icons.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "native"
   ],
   "scripts": {
-    "build": "tsdx build",
+    "build": "tsdx build -i src/index.ts -i src/native.tsx && cp dist/index.js native/index.js && mv dist/native.d.ts native/index.d.ts && rm -rf native/src",
     "build:storybook": "build-storybook",
     "format:all": "yarn format:source && yarn format:svgs",
     "format:source": "yarn prettier --write \"./src/**/*.ts*\" \"./src/**/*.js\"",
@@ -37,7 +38,8 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16"
+    "react-dom": ">=16",
+    "react-native-svg": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -65,10 +67,12 @@
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-native-svg": "^12.1.0",
     "react-svg-loader": "^3.0.3",
     "react-test-renderer": "^16.12.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-react-svg": "^3.0.3",
+    "rollup-plugin-string": "^3.0.0",
     "semantic-release": "^17.0.4",
     "svgo": "^1.3.2",
     "ts-loader": "^6.2.1",
