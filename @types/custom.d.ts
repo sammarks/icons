@@ -1,6 +1,7 @@
 declare module '*.svg' {
-  import { Svg } from 'react-native-svg';
-  const component: Svg;
+  import { SVGFactory } from 'react';
+
+  const component: SVGFactory;
 
   export default component;
 }

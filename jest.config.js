@@ -2,8 +2,6 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
-  preset: 'react-native',
-
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -167,8 +165,8 @@ module.exports = {
 
   // A map from regular expressions to paths to transformers
   transform: {
+    '^.+\\.js$': 'babel-jest',
     '^.+\\.svg$': 'jest-svg-transformer',
-    '^.+\\.(js|ts|tsx)$': require.resolve('react-native/jest/preprocessor.js'),
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
