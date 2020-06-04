@@ -11,6 +11,8 @@
       }
     },
     { "cleanupIDs": true, "params": { "minify": true } },
+    { "prefixIds": true },
+    { "removeXMLNS": true },
     { "cleanupListOfValues": true },
     { "collapseGroups": true },
     { "convertColors": true },
@@ -32,7 +34,7 @@
     { "removeEmptyContainers": true },
     { "removeEmptyText": true },
     { "removeNonInheritableGroupAttrs": true },
-    { "removeTitle": false },
+    { "removeTitle": true },
     { "removeUnknownsAndDefaults": true },
     { "removeUnusedNS": true },
     { "removeUselessDefs": true },
