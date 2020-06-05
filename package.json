@@ -20,7 +20,7 @@
     "native"
   ],
   "scripts": {
-    "build": "tsdx build -i src/index.ts -i src/native.tsx && cp dist/index.js native/index.js && mv dist/native.d.ts native/index.d.ts && rm -rf native/src",
+    "build": "tsdx build -i src/index.ts -i src/native.tsx && cp dist/index.js native/index.js && mv dist/native.d.ts native/index.d.ts && rm -rf native/src && tsdx build",
     "build:storybook": "build-storybook",
     "format:all": "yarn format:source && yarn format:svgs",
     "format:source": "yarn prettier --write \"./src/**/*.ts*\" \"./src/**/*.js\"",
