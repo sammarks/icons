@@ -26,7 +26,7 @@
     "format:source": "yarn prettier --write \"./src/**/*.ts*\" \"./src/**/*.js\"",
     "format:svgs": "yarn svgo -f src/svgs --pretty --config=svgo.config.json",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "yarn build",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
