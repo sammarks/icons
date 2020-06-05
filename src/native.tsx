@@ -8,8 +8,13 @@ import _LeftRight from './svgs/left-right.svg';
 import _Dragger from './svgs/dragger.svg';
 import _Panning from './svgs/panning.svg';
 
-const svg = (contents: string | React.SVGFactory): React.FC<Partial<XmlProps>> => {
-  return (props) => <SvgXml xml={contents as string} {...props} />;
+export interface SvgProps extends Partial<XmlProps> {
+  size?: number;
+}
+const svg = (contents: string | React.SVGFactory): React.FC<SvgProps> => {
+  return ({ size = 16, ...props }) => (
+    <SvgXml xml={contents as string} width={size} height={size} {...props} />
+  );
 };
 
 const Metronome = svg(_Metronome);
