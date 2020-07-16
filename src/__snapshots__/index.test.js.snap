@@ -1,5 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`svg-icons ArrowDown renders 1`] = `
+<svg
+  aria-hidden="true"
+  fill="currentColor"
+  height="1em"
+  viewBox="0 0 64 64"
+  width="1em"
+>
+  <title>
+    arrow-down
+  </title>
+  <path
+    d="M58.533 19.804l1.873 2.534a1 1 0 01-.21 1.399L32.594 44.132a1 1 0 01-1.188 0L3.804 23.737a1 1 0 01-.21-1.399l1.873-2.534a1 1 0 011.293-.278l.105.068 24.54 18.134a1 1 0 001.188 0l24.542-18.134a1 1 0 011.398.21z"
+  />
+</svg>
+`;
+
+exports[`svg-icons ArrowLeft renders 1`] = `
+<svg
+  aria-hidden="true"
+  fill="currentColor"
+  height="1em"
+  viewBox="0 0 64 64"
+  width="1em"
+>
+  <title>
+    arrow-left
+  </title>
+  <path
+    d="M43.66 5.931L41.127 4.06a1 1 0 00-1.399.21l-20.395 27.6a1 1 0 000 1.189L39.728 60.66a1 1 0 001.399.21l2.533-1.872a1 1 0 00.279-1.293l-.069-.105-18.133-24.54a1 1 0 010-1.189L43.87 7.33a1 1 0 00-.21-1.399z"
+  />
+</svg>
+`;
+
+exports[`svg-icons ArrowRight renders 1`] = `
+<svg
+  aria-hidden="true"
+  fill="currentColor"
+  height="1em"
+  viewBox="0 0 64 64"
+  width="1em"
+>
+  <title>
+    arrow-right
+  </title>
+  <path
+    d="M19.543 5.931l2.533-1.872a1 1 0 011.399.21L43.87 31.87a1 1 0 010 1.189L23.475 60.66a1 1 0 01-1.399.21l-2.533-1.872a1 1 0 01-.279-1.293l.069-.105 18.133-24.54a1 1 0 000-1.189L19.333 7.33a1 1 0 01.21-1.399z"
+  />
+</svg>
+`;
+
+exports[`svg-icons ArrowUp renders 1`] = `
+<svg
+  aria-hidden="true"
+  fill="currentColor"
+  height="1em"
+  viewBox="0 0 64 64"
+  width="1em"
+>
+  <title>
+    arrow-up
+  </title>
+  <path
+    d="M58.533 43.922l1.873-2.534a1 1 0 00-.21-1.398L32.594 19.594a1 1 0 00-1.188 0L3.804 39.99a1 1 0 00-.21 1.398l1.873 2.534a1 1 0 001.293.278l.105-.068 24.54-18.133a1 1 0 011.188 0l24.542 18.133a1 1 0 001.398-.21z"
+  />
+</svg>
+`;
+
 exports[`svg-icons Dragger renders 1`] = `
 <svg
   aria-hidden="true"
