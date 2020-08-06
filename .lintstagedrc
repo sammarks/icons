@@ -1,4 +1,5 @@
 {
-  "*.svg": ["yarn svgo --pretty --config=svgo.config.json"],
+  "**/svgs/color/*.svg": ["yarn svgo --pretty --config=svgo-color.config.json"],
+  "**/svgs/*.svg": ["yarn svgo --pretty --config=svgo.config.json"],
   "*.ts*": ["prettier --write"]
 }

@@ -13,8 +13,8 @@ module.exports = {
     const svgPlugins = isNative
       ? [string({ include: '**/*.svg' })]
       : [
-          reactSvg({ include: '**/svgs/*.svg', svgo: svgoConfig }),
-          reactSvg({ include: '**/svgs/color/*.svg', svgo: colorSvgoConfig })
+          reactSvg({ include: '**/svgs/color/*.svg', svgo: colorSvgoConfig }),
+          reactSvg({ include: '**/svgs/*.svg', svgo: svgoConfig })
         ]
     if (isNative) {
       config.output.file = config.output.file.replace('dist/icons.', 'native/icons.')
