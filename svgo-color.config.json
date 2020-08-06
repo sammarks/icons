@@ -1,0 +1,43 @@
+{
+  "plugins": [
+    {
+      "addAttributesToSVGElement": {
+        "attributes": [{ "aria-hidden": "true" }, { "height": "1em" }, { "width": "1em" }]
+      }
+    },
+    {
+      "removeAttrs": {
+        "attrs": ["stroke", "fill-rule"]
+      }
+    },
+    { "cleanupIDs": true, "params": { "minify": true } },
+    { "prefixIds": true },
+    { "removeXMLNS": true },
+    { "cleanupListOfValues": true },
+    { "collapseGroups": true },
+    { "convertColors": true },
+    { "convertStyleToAttrs": true },
+    { "convertTransform": true },
+    { "mergePaths": true },
+    { "minifyStyles": true },
+    { "moveElemesAttrsToGroup": true },
+    { "removeComments": true },
+    { "removeDesc": true, "params": { "removeAny": true } },
+    { "removeDimensions": true },
+    { "removeDoctype": true },
+    { "removeEditorsNSData": true },
+    { "removeEmptyAttrs": true },
+    { "removeEmptyContainers": true },
+    { "removeEmptyText": true },
+    { "removeNonInheritableGroupAttrs": true },
+    { "removeTitle": true },
+    { "removeUnknownsAndDefaults": true },
+    { "removeUnusedNS": true },
+    { "removeUselessDefs": true },
+    { "removeUselessStrokeAndFill": true },
+    { "removeXMLProcInst": true },
+    { "sortAttrs": true }
+  ],
+  "floatPrecision": 3,
+  "multipass": true
+}

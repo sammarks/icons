@@ -18,7 +18,7 @@ Internally, it uses `react-native-svg`, so make sure that's installed and config
 
 ### Process
 
-- Put your SVG icon into `src/svgs`
+- Put your SVG icon into `src/svgs` (or `src/svgs/color` for color SVGs)
 - Ensure that the `svg` includes a `title` element as the first child of the `svg` element.
   - Its content should be a human-readible description of the SVG (this is for accessibility)
 - Add the correct type-safe mapping in `src/index.ts` (follow the pattern)

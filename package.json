@@ -24,7 +24,7 @@
     "build:storybook": "build-storybook",
     "format:all": "yarn format:source && yarn format:svgs",
     "format:source": "yarn prettier --write \"./src/**/*.ts*\" \"./src/**/*.js\"",
-    "format:svgs": "yarn svgo -f src/svgs --pretty --config=svgo.config.json",
+    "format:svgs": "yarn svgo -f src/svgs --pretty --config=svgo.config.json && yarn svgo -f src/svgs/color --pretty --config=svgo-color.config.json",
     "lint": "tsdx lint",
     "prepare": "yarn build",
     "semantic-release": "semantic-release",
