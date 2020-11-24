@@ -11,6 +11,7 @@ import _ArrowLeft from './svgs/arrow-left.svg';
 import _ArrowRight from './svgs/arrow-right.svg';
 import _ArrowUp from './svgs/arrow-up.svg';
 import _ColorGoogle from './svgs/color/google.svg';
+import _ColorMicrosoft from './svgs/color/microsoft.svg';
 
 const Metronome = _Metronome as SVGFactory;
 const Pitch = _Pitch as SVGFactory;
@@ -23,6 +24,7 @@ const ArrowLeft = _ArrowLeft as SVGFactory;
 const ArrowRight = _ArrowRight as SVGFactory;
 const ArrowUp = _ArrowUp as SVGFactory;
 const ColorGoogle = _ColorGoogle as SVGFactory;
+const ColorMicrosoft = _ColorMicrosoft as SVGFactory;
 
 export {
   Metronome,
@@ -36,4 +38,5 @@ export {
   ArrowRight,
   ArrowUp,
   ColorGoogle,
+  ColorMicrosoft,
 };

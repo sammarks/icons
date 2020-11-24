@@ -12,6 +12,7 @@ import _ArrowLeft from './svgs/arrow-left.svg';
 import _ArrowRight from './svgs/arrow-right.svg';
 import _ArrowUp from './svgs/arrow-up.svg';
 import _ColorGoogle from './svgs/color/google.svg';
+import _ColorMicrosoft from './svgs/color/microsoft.svg';
 
 export interface SvgProps extends Partial<XmlProps> {
   size?: number;
@@ -33,6 +34,7 @@ const ArrowLeft = svg(_ArrowLeft);
 const ArrowRight = svg(_ArrowRight);
 const ArrowUp = svg(_ArrowUp);
 const ColorGoogle = svg(_ColorGoogle);
+const ColorMicrosoft = svg(_ColorMicrosoft);
 
 export {
   Metronome,
@@ -46,4 +48,5 @@ export {
   ArrowRight,
   ArrowUp,
   ColorGoogle,
+  ColorMicrosoft,
 };
