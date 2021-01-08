@@ -11,6 +11,7 @@ import _ArrowDown from './svgs/arrow-down.svg';
 import _ArrowLeft from './svgs/arrow-left.svg';
 import _ArrowRight from './svgs/arrow-right.svg';
 import _ArrowUp from './svgs/arrow-up.svg';
+import _DotMenu from './svgs/dot-menu.svg';
 import _ColorGoogle from './svgs/color/google.svg';
 import _ColorMicrosoft from './svgs/color/microsoft.svg';
 
@@ -33,6 +34,7 @@ const ArrowDown = svg(_ArrowDown);
 const ArrowLeft = svg(_ArrowLeft);
 const ArrowRight = svg(_ArrowRight);
 const ArrowUp = svg(_ArrowUp);
+const DotMenu = svg(_DotMenu);
 const ColorGoogle = svg(_ColorGoogle);
 const ColorMicrosoft = svg(_ColorMicrosoft);
 
@@ -47,6 +49,7 @@ export {
   ArrowLeft,
   ArrowRight,
   ArrowUp,
+  DotMenu,
   ColorGoogle,
   ColorMicrosoft,
 };

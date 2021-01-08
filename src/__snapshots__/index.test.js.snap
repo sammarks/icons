@@ -128,6 +128,23 @@ exports[`svg-icons ColorMicrosoft renders 1`] = `
 </svg>
 `;
 
+exports[`svg-icons DotMenu renders 1`] = `
+<svg
+  aria-hidden="true"
+  fill="currentColor"
+  height="1em"
+  viewBox="0 0 64 64"
+  width="1em"
+>
+  <title>
+    dot-menu
+  </title>
+  <path
+    d="M32.093 44.814a8.093 8.093 0 110 16.186 8.093 8.093 0 010-16.186zm0-20.907a8.093 8.093 0 110 16.186 8.093 8.093 0 010-16.186zm0-20.907a8.093 8.093 0 110 16.186 8.093 8.093 0 010-16.186z"
+  />
+</svg>
+`;
+
 exports[`svg-icons Dragger renders 1`] = `
 <svg
   aria-hidden="true"
