@@ -14,6 +14,9 @@ import _ArrowUp from './svgs/arrow-up.svg';
 import _DotMenu from './svgs/dot-menu.svg';
 import _ColorGoogle from './svgs/color/google.svg';
 import _ColorMicrosoft from './svgs/color/microsoft.svg';
+import _Play from './svgs/play.svg';
+import _Pause from './svgs/pause.svg';
+import _Stop from './svgs/stop.svg';
 
 export interface SvgProps extends Partial<XmlProps> {
   size?: number;
@@ -37,6 +40,9 @@ const ArrowUp = svg(_ArrowUp);
 const DotMenu = svg(_DotMenu);
 const ColorGoogle = svg(_ColorGoogle);
 const ColorMicrosoft = svg(_ColorMicrosoft);
+const Play = svg(_Play);
+const Pause = svg(_Pause);
+const Stop = svg(_Stop);
 
 export {
   Metronome,
@@ -52,4 +58,7 @@ export {
   DotMenu,
   ColorGoogle,
   ColorMicrosoft,
+  Play,
+  Pause,
+  Stop,
 };
