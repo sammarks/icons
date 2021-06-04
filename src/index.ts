@@ -13,6 +13,7 @@ import _ArrowUp from './svgs/arrow-up.svg';
 import _DotMenu from './svgs/dot-menu.svg';
 import _ColorGoogle from './svgs/color/google.svg';
 import _ColorMicrosoft from './svgs/color/microsoft.svg';
+import _ColorClever from './svgs/color/clever.svg';
 import _Play from './svgs/play.svg';
 import _Pause from './svgs/pause.svg';
 import _Stop from './svgs/stop.svg';
@@ -30,6 +31,7 @@ const ArrowUp = _ArrowUp as SVGFactory;
 const DotMenu = _DotMenu as SVGFactory;
 const ColorGoogle = _ColorGoogle as SVGFactory;
 const ColorMicrosoft = _ColorMicrosoft as SVGFactory;
+const ColorClever = _ColorClever as SVGFactory;
 const Play = _Play as SVGFactory;
 const Pause = _Pause as SVGFactory;
 const Stop = _Stop as SVGFactory;
@@ -48,6 +50,7 @@ export {
   DotMenu,
   ColorGoogle,
   ColorMicrosoft,
+  ColorClever,
   Play,
   Pause,
   Stop,
